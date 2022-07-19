@@ -209,18 +209,33 @@
 //// const cars = new Array ('Мазда', 'Мерседес', 'Форд');
 //// console.log(cars);
 
-const cars = ['Мазда', 'Мерседес', 'Форд'];
-console.log(cars[0]);
-console.log(cars[1]);
-console.log(cars[2]);
-console.log(cars.length);
+// const cars = ['Мазда', 'Мерседес', 'Форд'];
+// console.log(cars[0]);
+// console.log(cars[1]);
+// console.log(cars[2]);
+// console.log(cars.length);
 
-cars [0] = 'Porsche';
-cars [1] = 'BMW';
-cars [2] = 'Lambargini';
-cars [3] = 'Мазда';
-cars [4] = 'Мерседес';
-cars [5] = 'Форд';
-cars [cars.length] = 'BIBIKA'; // В конец массива
-console.log(cars);
+// cars [0] = 'Porsche';
+// cars [1] = 'BMW';
+// cars [2] = 'Lambargini';
+// cars [3] = 'Мазда';
+// cars [4] = 'Мерседес';
+// cars [5] = 'Форд';
+// cars [cars.length] = 'BIBIKA'; // В конец массива
+// console.log(cars);
+//!========================================================================================================================================================
+
+// 10. Циклы
+
+const cars = ['Мазда', 'Мерседес', 'Форд', 'Опель'];
+
+// for (let i = 0; i < cars.length; i++){
+//    const car = cars[i];
+//    console.log(car);
+// }
+
+// Новый способ в ES6
+for (let car of cars) {
+   console.log(car);
+}
 //!========================================================================================================================================================
