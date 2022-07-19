@@ -81,3 +81,42 @@
 // const isFullAge = (currentYear - birthYear) >= fullAge // 22 >= 22 => true
 // console.log(isFullAge);
 //!========================================================================================================================================================
+
+// 6. Условные операторы
+
+const courseStatus = 'fail'; // ready, fail, pending
+
+if (courseStatus === 'ready') {
+   console.log('Курс уже проходится, и скоро я стану джуном!');
+} else if (courseStatus === 'pending') {
+   console.log('Курс ещё не проходится, но я все равно скоро я стану джуном!');
+} else if (courseStatus === 'fail') {
+   console.log('Курс провален, но я все равно скоро я стану джуном!');
+} else {
+   console.log('Я в любом случае стану джуном. Или мидлом. Или тимлидом.')
+}
+
+// Boolean значения
+const isReady = true;
+
+// if (isReady === true) {
+//    console.log('Готово!');
+// }
+// // Нет смысла писать ()=== true)
+// if (isReady) {
+//    console.log('Готово!');
+// } else {
+//    console.log('Все не готово');
+// }
+
+
+// Тернарное выражение
+isReady ? console.log('Все готово'): console.log('Все не готово');;
+
+
+// Что такое двойное равно (==) и тройное (===)
+const num1 = 42
+const num2 = '42'
+console.log(num1 == num2); // True (Хотя тут разные типы данных! (Number и String))
+console.log(num1 === num2); // False (Тут разные типы данных! (Number и String))
+//!========================================================================================================================================================
