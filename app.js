@@ -84,20 +84,20 @@
 
 // 6. Условные операторы
 
-const courseStatus = 'fail'; // ready, fail, pending
+// const courseStatus = 'fail'; // ready, fail, pending
 
-if (courseStatus === 'ready') {
-   console.log('Курс уже проходится, и скоро я стану джуном!');
-} else if (courseStatus === 'pending') {
-   console.log('Курс ещё не проходится, но я все равно скоро я стану джуном!');
-} else if (courseStatus === 'fail') {
-   console.log('Курс провален, но я все равно скоро я стану джуном!');
-} else {
-   console.log('Я в любом случае стану джуном. Или мидлом. Или тимлидом.')
-}
+// if (courseStatus === 'ready') {
+//    console.log('Курс уже проходится, и скоро я стану джуном!');
+// } else if (courseStatus === 'pending') {
+//    console.log('Курс ещё не проходится, но я все равно скоро я стану джуном!');
+// } else if (courseStatus === 'fail') {
+//    console.log('Курс провален, но я все равно скоро я стану джуном!');
+// } else {
+//    console.log('Я в любом случае стану джуном. Или мидлом. Или тимлидом.')
+// }
 
 // Boolean значения
-const isReady = true;
+// const isReady = true;
 
 // if (isReady === true) {
 //    console.log('Готово!');
@@ -111,12 +111,70 @@ const isReady = true;
 
 
 // Тернарное выражение
-isReady ? console.log('Все готово'): console.log('Все не готово');;
+// isReady ? console.log('Все готово'): console.log('Все не готово');;
 
 
 // Что такое двойное равно (==) и тройное (===)
-const num1 = 42
-const num2 = '42'
-console.log(num1 == num2); // True (Хотя тут разные типы данных! (Number и String))
-console.log(num1 === num2); // False (Тут разные типы данных! (Number и String))
+// const num1 = 42
+// const num2 = '42'
+// console.log(num1 == num2); // True (Хотя тут разные типы данных! (Number и String))
+// console.log(num1 === num2); // False (Тут разные типы данных! (Number и String))
+//!========================================================================================================================================================
+
+// 7. Булевая логика
+
+// Логический оператор > И < (&&)
+
+// (True)
+// const a = true && true;
+// console.log(a);
+
+// (False)
+// const b = true && false;
+// console.log(b);
+
+// (False)
+// const c = false && true;
+// console.log(c);
+
+// (False)
+// const d = false && false;
+// console.log(d );
+
+
+// Логический оператор > ИЛИ < (||)
+
+// (True)
+// const a = true || true;
+// console.log(a);
+
+// (True)
+// const b = true || false;
+// console.log(b);
+
+// (True)
+// const c = false || true;
+// console.log(c);
+
+// (False)
+// const d = false || false;
+// console.log(d );
+
+
+// Логический оператор > НЕ < (!) Отрицание
+
+// (True)
+// const a = true;
+// console.log(a);
+
+// (False)
+// const b = !true;
+// console.log(b);
+
+// (True) 
+// const c = !!true;
+// console.log(c);
+
+// MDN
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators
 //!========================================================================================================================================================
