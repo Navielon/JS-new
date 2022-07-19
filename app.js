@@ -239,3 +239,27 @@ for (let car of cars) {
    console.log(car);
 }
 //!========================================================================================================================================================
+
+// 11. Объекты
+
+// const user = {
+//    firstName: 'Ruslan',
+//    lastName: 'Gavrilin',
+//    birthYear: 2000,
+//    languages: ['Ru', 'En', 'Bu'],
+//    hasWife: false,
+//    greet: function(){
+//       console.log('Greet!');
+//    }
+// }
+// Обращение к объекту
+// console.log(user.firstName);
+// console.log(user['lastName', 'birthYear']);
+// const key = 'languages'
+// console.log(user[key]);
+// user.hasWife = true;
+// console.log(user);
+// user.isProgrammer = true;
+// console.log(user);
+// user.greet();
+//!========================================================================================================================================================
