@@ -178,3 +178,28 @@
 // MDN
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators
 //!========================================================================================================================================================
+
+// 8. Функции
+
+function calculateAge (birthYear) {
+   const currentYear = 2022
+   return currentYear - birthYear;
+}
+
+console.log(calculateAge(2000));
+console.log(calculateAge(2003));
+console.log(calculateAge(1980));
+
+function logInfoAbout (firstName, year){
+   const age = calculateAge (year)
+   if (age > 0) {
+   console.log(`Человек по имени ${firstName}; Возраст :  ${age}`);
+   } else {
+      console.log('Человек ещё не родился!');
+   }
+}
+logInfoAbout('Руслан', 2000)
+logInfoAbout('Катя', 2003)
+logInfoAbout('Катя', 2023)
+//!========================================================================================================================================================
+
