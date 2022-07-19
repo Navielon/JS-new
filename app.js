@@ -181,25 +181,46 @@
 
 // 8. Функции
 
-function calculateAge (birthYear) {
-   const currentYear = 2022
-   return currentYear - birthYear;
-}
+// function calculateAge (birthYear) {
+//    const currentYear = 2022
+//    return currentYear - birthYear;
+// }
 
-console.log(calculateAge(2000));
-console.log(calculateAge(2003));
-console.log(calculateAge(1980));
+// console.log(calculateAge(2000));
+// console.log(calculateAge(2003));
+// console.log(calculateAge(1980));
 
-function logInfoAbout (firstName, year){
-   const age = calculateAge (year)
-   if (age > 0) {
-   console.log(`Человек по имени ${firstName}; Возраст :  ${age}`);
-   } else {
-      console.log('Человек ещё не родился!');
-   }
-}
-logInfoAbout('Руслан', 2000)
-logInfoAbout('Катя', 2003)
-logInfoAbout('Катя', 2023)
+// function logInfoAbout (firstName, year){
+//    const age = calculateAge (year)
+//    if (age > 0) {
+//    console.log(`Человек по имени ${firstName}; Возраст :  ${age}`);
+//    } else {
+//       console.log('Человек ещё не родился!');
+//    }
+// }
+// logInfoAbout('Руслан', 2000)
+// logInfoAbout('Катя', 2003)
+// logInfoAbout('Катя', 2023)
 //!========================================================================================================================================================
 
+// 9. Массивы
+
+// Так делать не нужно
+//// const cars = new Array ('Мазда', 'Мерседес', 'Форд');
+//// console.log(cars);
+
+const cars = ['Мазда', 'Мерседес', 'Форд'];
+console.log(cars[0]);
+console.log(cars[1]);
+console.log(cars[2]);
+console.log(cars.length);
+
+cars [0] = 'Porsche';
+cars [1] = 'BMW';
+cars [2] = 'Lambargini';
+cars [3] = 'Мазда';
+cars [4] = 'Мерседес';
+cars [5] = 'Форд';
+cars [cars.length] = 'BIBIKA'; // В конец массива
+console.log(cars);
+//!========================================================================================================================================================
