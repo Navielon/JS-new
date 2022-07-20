@@ -3,20 +3,20 @@
 // 1. Функции деклорации и экспрешн
 
 // Function declaration // Можно обращаться до фактического объявления функции
-function greet(name) {
-   console.log('Привет - ', name);
-}
+// function greet(name) {
+//    console.log('Привет - ', name);
+// }
 
 // Function expression // Нельзя обращаться до фактического объявления функции
-const greet2 = function greet2(name){
-   console.log('Привет - ', name);
+// const greet2 = function greet2(name){
+//    console.log('Привет - ', name);
 
-}
+// }
 // greet ('Катя')
 // greet2 ('Федя')
 
 // console.log(typeof greet);
-console.dir(greet);
+// console.dir(greet);
 //!========================================================================================================================================================
 
 // 2. Анонимные функции
@@ -59,3 +59,23 @@ console.dir(greet);
 // console.log(pow2(5)); // 25
 // console.log(pow3(5)); // 25
 //!========================================================================================================================================================
+
+// 4. Параметры по умолчанию
+
+const sum = (a = 1, b = 1) => a + b
+
+console.log(sum(41, 2));
+console.log(sum());
+
+function sumAll(...all) {
+   let result = 0
+   for ( let num of all) {
+      result += num
+   }
+   return result
+}
+const res = sumAll(1,2,3,4,5,6,7)
+console.log(res);
+//!========================================================================================================================================================
+
+// 5. Замыкание
