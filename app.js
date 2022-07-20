@@ -5,8 +5,8 @@ const person = {
    age : 22,
    isProgrammer: true,
    languages: ['ru', 'en', 'by'],
-   'complex key': 'Complex key',
-   ['key_' + (1+3)] : 'Computed key', // key__4
+   // 'complex key': 'Complex key',
+   // ['key_' + (1+3)] : 'Computed key', // key__4
    greet() {
       console.log('Greet from person');
    }
@@ -36,3 +36,26 @@ const person = {
 
 // console.log(name, personAge, languages);
 //TODO========================================================================================================================================================
+
+console.log(person);
+//  for (let key in person) {
+//    if (person.hasOwnProperty(key)){
+//       console.log('key:', key);
+//       console.log('value:', person[key]);
+//    }
+//  }
+
+// const keys = Object.keys(person)
+// keys.forEach((key) => {
+//    console.log('key:', key);
+//    console.log('value:', person[key]);
+// })
+// console.log(keys);
+
+
+Object.keys(person).forEach((key) => {
+   console.log('key:', key);
+   console.log('value:', person[key]);
+})
+//TODO========================================================================================================================================================
+
