@@ -45,6 +45,33 @@ function addItemToEnd(){
 
 // console.log(cars.indexOf('BMW')) // получение индекса элемента из массива
 // const index = cars.indexOf('BMW')
-cars[index] = 'Volkswagen'
-console.log(cars);
+// cars[index] = 'Volkswagen'
+// console.log(cars);
+//TODO========================================================================================================================================================
+
+// const index = people.findIndex(function(person){ // Метод findIndex является циклом
+   // console.log(person)
+//    return person.budget === 4100
+// })
+
+// Менее правильный способ
+// let findedPerson
+// for (const person of people){
+//    console.log(person)
+//    if (person.budget === 4100) {
+//       findedPerson = person
+//    }
+// }
+// console.log(findedPerson);
+
+// Более правильный способ
+// const find = people.find(function(person){ // Метод findIndex является циклом
+   // console.log(person)
+//    return person.budget === 4100
+// })
+// console.log(people[index]);
+// console.log(find);
+
+// const person = people.find(person => person.budget === 4100) // Сокращение лишнего кода
+// console.log(person);
 //TODO========================================================================================================================================================
