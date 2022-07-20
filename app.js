@@ -75,3 +75,20 @@ function addItemToEnd(){
 // const person = people.find(person => person.budget === 4100) // Сокращение лишнего кода
 // console.log(person);
 //TODO========================================================================================================================================================
+
+// console.log(cars.includes('Mazda')) // Есть ли элемент в массиве 
+
+// const upperCaseCars = cars.map (car => { // метод MAP ВСЕГДА ВОЗВРАЩАЕТ НОВЫЙ МАССИВ
+//    return car.toUpperCase()
+// })
+
+// const pow2Fib = fib.map(num => num ** 2)
+// const pow2 = num => num ** 2
+// const sqrt = num => Math.sqrt(num)
+// const pow2Fib = fib.map(pow2).map(sqrt)
+// const pow2Fib = fib.map(pow2).map(Math.sqrt)
+// console.log(upperCaseCars);
+// console.log(cars);
+
+// console.log(pow2Fib);
+//TODO========================================================================================================================================================
